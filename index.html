@@ -9,6 +9,8 @@
  float:left;
  }
 
+
+
 .headerlogo {
  background-color: red;
  width: 45px; 
@@ -62,7 +64,7 @@ html {
     overflow: hidden;
 }
 
-.topnav a {
+.topnav a, .dropbtn {
     float: left;
     display: block;
     color: #F0F0F0;
@@ -72,11 +74,33 @@ html {
     font-size: 17px;
 }
 
-  .topnav a:hover {
+  .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: #169C6A;
     color: #F0F0F0;
     transition: background-color 0.4s linear;
 }
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
 </style>
 <html>
 <head>
@@ -88,6 +112,12 @@ html {
     <div class="topnav">
   <a href="home.html">Sup</a>
   <a href="sup.html">Sup</a>
+     <div class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="sup.html">Link 1</a>
+      <a href="sup.html">Link 2</a>
+     <a href="sup.html">Link 3</a></div></div>
 </div>
     <div class="teampicture"></div>
     
