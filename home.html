@@ -76,11 +76,23 @@ html {
 .teampicture {
     background-image: url('http://www.access4.eu/_media/home_hg.jpg');
     min-height:300px;
+    position : relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     }
+ 
+ .teampicture p {
+  margin: 0;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  font-weight: bold;
+  left: 50%;
+  color: #F8F8F8;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
  
 ul {
     list-style-type: none;
@@ -159,7 +171,7 @@ li.dropdown {
     </div>
   </li>
 </ul>
-    <div class="teampicture"></div>
+ <div class="teampicture"><p>Title</p></div>
     
     <div class="pagecontent"><div class="pagemaincontent"><br><br><br>
      <div class="title"><p>Title</p></div></div></div>
